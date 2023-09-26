@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-container {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.nav-container .nav-info {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-info address {
+    font-style: normal;
+    text-align: left;
+ }
+
+ @media (max-width: 600px) {
+    .nav-info address {
+        font-size: 0.8em;
+    }
+    .nav-container {
+        padding: 1rem 0;
+    }
+ }
+
+.nav-container .logo {
+    height: 2rem;
+    border-radius: 10%;
+    padding: 0 1rem;
+}
+
+.nav-container .headshot {
+    height: 3.5rem;
+    border-radius: 50%;
+    padding: 0 1rem;
+}
+
+.nav-container .menu {
+    display: none;
+}
+
+.nav-container .nav-link {
+  padding: 0 1rem;
+}
+
+.nav-container .nav-link:hover {
+    background-color: white;
+    color: lightblue;
+    font-weight: 700;
+    border-radius: 30% 30% 0 0;
+    padding: 1.4rem 1rem 2.1rem 1rem;
+  }
+@media screen and (max-width: 1000px) {
+    .nav-container .nav-link{
+        padding: 0.5rem;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-container .menu {
+        display: block;
+        border: none;
+        padding: 1rem;
+        border-radius: 25%;
+        background-color: rgba(255, 0, 0, 0.8);
+        color: white;
+        font-family: inherit;
+        font-weight: bolder;
+        font-size: 0.8em;
+    
+        font-weight: bold;
+    }
+    .nav-container .nav-link {
+        display: none;
+        
+    }
+ }
+
+ .nav-container .menu:hover {
+    background-color: rgba(0, 0, 255, 0.6);
+    
+}
+ 
+ .hidden {
+    display: none;
+ }
