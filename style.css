@@ -35,29 +35,38 @@ a {
  @media (max-width: 600px) {
     .nav-info address {
         font-size: 0.8em;
+        padding-right: 0.5rem;
     }
     .nav-container {
         padding: 1rem 0;
+        justify-content: left;
     }
  }
 
-.nav-container .logo {
+/* .nav-container .logo {
     height: 2rem;
     border-radius: 10%;
     padding: 0 1rem;
-}
+} */
 
 .nav-container .headshot {
-    height: 3.5rem;
+    height: 4rem;
     border-radius: 50%;
     padding: 0 1rem;
+}
+@media screen and (max-width: 760px) {
+    .nav-container .headshot {
+        height: 3rem;
+        border-radius: 50%;
+        padding: 0 0.2rem;
+    }
 }
 
 .nav-container .menu {
     display: none;
 }
 
-.nav-container .nav-link {
+nav .nav-link {
   padding: 0 1rem;
 }
 
@@ -68,30 +77,26 @@ a {
     border-radius: 30% 30% 0 0;
     padding: 1.4rem 1rem 2.1rem 1rem;
   }
-@media screen and (max-width: 1000px) {
-    .nav-container .nav-link{
-        padding: 0.5rem;
-        font-size: 0.8em;
-    }
-}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .nav-container .menu {
         display: block;
         border: none;
-        padding: 1rem;
-        border-radius: 25%;
+        padding: 0.8rem;
+        margin: 0;
+        border-radius: 20%;
         background-color: rgba(255, 0, 0, 0.8);
         color: white;
         font-family: inherit;
         font-weight: bolder;
         font-size: 0.8em;
-    
-        font-weight: bold;
     }
-    .nav-container .nav-link {
-        display: none;
-        
+    .nav-container .nav-link{
+        padding: 0.5rem;
+        font-size: 0.8em;
+    }
+    .socials-container {
+        display: none;  
     }
  }
 
@@ -99,7 +104,22 @@ a {
     background-color: rgba(0, 0, 255, 0.6);
     
 }
+
+@media screen and (max-width: 760px) {
+    .menu-list-container .nav-link {
+        display: block;
+        background-color: lightskyblue;
+        padding: 1.3rem;
+    }
+    
+    .menu-list-container .nav-link:hover {
+        display: block;
+        background-color: rgba(255, 0, 0, 0.8);
+        color: white;
+        border-radius: 1rem;   
+    }   
+}
  
  .hidden {
-    display: none;
+    display: none !important;
  }
