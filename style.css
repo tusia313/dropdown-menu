@@ -9,39 +9,21 @@ body {
     font-size: 1.1em;
 }
 
-nav .nav-links-container a {
+a {
     text-decoration: none;
     color: inherit;
-    padding: 1.2rem 1.2rem 1.6rem 1.2rem;
-    border-radius: 1.2rem 1.2rem 0 0;
-    margin: 0.6rem 0.6rem 0 0.6rem;
 }
-
-p.info {
-    margin: 0;
-    color: inherit;
-}
-
-/* p:hover {
-    background-color: white;
-    color: lightblue;
-    font-weight: 700;
-    border-radius: 30% 30% 0 0;
-    padding: 1.4rem 1rem 2.1rem 1rem;
-} */
 
 nav {
     display: flex;
     justify-content: space-between;
     background-color: lightblue;
-    /* align-items: center;
-    padding: 2rem 1rem; */
 }
 
 nav .main-container {
     display: flex;
     align-items: center;
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 nav .info-container {
@@ -66,6 +48,11 @@ nav .image-container img {
     width: 100%;
 }
 
+p.info {
+    margin: 0;
+    color: inherit;
+}
+
 nav .nav-links-container {
     display: flex;
     align-items: center;
@@ -73,6 +60,14 @@ nav .nav-links-container {
 
 nav button {
     display: none;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 1.2rem;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 nav button:hover {
@@ -84,39 +79,65 @@ nav button:active {
     color: aliceblue;
 }
 
-@media screen and (max-width: 760px) {
-    nav button {
-        display: block;
-        border: none;
-        padding: 0.6rem 1.2rem;
-        border-radius: 1.2rem;
-        background-color: rgba(255, 0, 0, 0.8);
-        color: white;
-        font-family: inherit;
-        font-weight: bolder;
-        font-size: 1.2em;
+nav .nav-links-container a {
+
+    padding: 1.2rem 1.2rem 1.6rem 1.2rem;
+    border-radius: 1.2rem 1.2rem 0 0;
+    margin: 0.6rem 0.6rem 0 0.6rem;
+    font-size: 1.1em;
+}
+
+nav .nav-links-container a:hover {
+    background-color: aliceblue;
+    color: lightskyblue;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* desktop first development */
+@media screen and (max-width: 940px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .main-container {
+        justify-content: space-between;
     }
 
     nav .nav-links-container {
         display: none;
     }
-}
 
-@media screen and (max-width: 760px) {
-    .menu-list-container .nav-link {
+    nav button {
+        display: block;
+    }
+
+    nav .menu-list-container .nav-link {
         display: block;
         background-color: lightskyblue;
-        padding: 1.3rem;
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        margin: 0.6rem;
     }
-
-    .menu-list-container .nav-link:hover {
-        display: block;
+    nav .menu-list-container .nav-link:hover {
         background-color: rgba(255, 0, 0, 0.8);
         color: white;
-        border-radius: 1rem;
+    }
+    .hidden {
+        display: none;
     }
 }
 
-.hidden {
-    display: none !important;
+@media screen and (max-width: 480px) {
+    nav {
+        font-size: 0.65em;
+    }
+    nav button {
+        padding: 0.6em;
+        margin-left: 0.5rem;
+    }
+
 }

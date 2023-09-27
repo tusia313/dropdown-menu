@@ -1,7 +1,10 @@
 
-const button = document.querySelector('.menu')
+const button = document.querySelector('button')
 const hamburgerList = document.querySelector('.menu-list-container')
-button.addEventListener('click', () => {
+
+function toggle() {
     hamburgerList.classList.toggle('hidden')
-})
+}
+
+button.addEventListener('click', toggle)
 
