@@ -31,11 +31,11 @@ nav .logo {
 
 /* bardzo dobry patent! */
 nav .image-container {
-    height: 3.6rem;
-    width: 3.6rem;
-    border-radius: 1.8rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
     overflow: hidden;
-    margin: 0 1.3rem;
+    margin: 0 1rem;
 }
 
 nav .image-container img {
@@ -46,11 +46,6 @@ nav p {
     margin: 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
-}
-
 nav .nav-links-container {
     display: flex;
     align-items: center;
@@ -59,7 +54,8 @@ nav .nav-links-container {
 nav button {
     display: none;
     border: none;
-    padding: 0.6em 1.3em;
+    padding: 0.6rem 1rem;
+    margin-left: 0.4rem;
     border-radius: 1.2rem;
     background-color: rgba(255, 0, 0, 0.8);
     color: white;
@@ -85,16 +81,14 @@ nav .nav-links-container a {
     align-items: center;
     text-decoration: none;
     text-wrap: nowrap;
+    color: inherit;
+    font-size: 1.2em;
 }
 
 nav .nav-links-container a:hover {
     background-color: aliceblue;
     color: lightskyblue;
 }
-
-/* .hidden {
-    display: none !important;
-} */
 
 /* desktop first development */
 @media screen and (max-width: 840px) {
@@ -113,45 +107,23 @@ nav .nav-links-container a:hover {
 
     nav .main-container {
         justify-content: space-between;
+        
     }
-
+/* nie potrzebujemy już width 100% i block daje nam pojawieie się on top of ech other */
     nav .nav-links-container {
         display: block;
     }
 
-    /* nav .menu-list-container .nav-link {
-        display: block;
+    nav a {
         background-color: lightskyblue;
         padding: 1.2rem;
-        border-radius: 1.2rem;
+        border-radius: 1.4rem;
         margin: 0.6rem;
     }
 
-    nav .menu-list-container .nav-link:hover {
+    nav a:hover {
         background-color: rgba(255, 0, 0, 0.8);
         color: white;
-    } */
+    }
 }
 
-/* @media screen and (max-width: 480px) {
-
-    nav .main-container {
-        font-size: 0.6em;
-        width: 100%;
-    }
-
-    nav .logo {
-        height: 2rem;
-    }
-
-    nav .image-container {
-        height: 2rem;
-        width: 2rem;
-        margin: 0.3rem;
-    }
-
-    nav button {
-        margin-left: 0.5rem;
-    }
-
-} */

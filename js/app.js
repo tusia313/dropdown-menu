@@ -1,6 +1,6 @@
 
-const button = document.querySelector('button')
-const hamburgerList = document.querySelector('.menu-list-container')
+const button = document.querySelector('#button')
+const hamburgerList = document.querySelector('.nav-links-container')
 
 function toggle() {
     hamburgerList.classList.toggle('hidden')
