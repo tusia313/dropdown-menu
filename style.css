@@ -6,12 +6,6 @@ body {
     font-family: 'Comfortaa', Helvetica, sans-serif;
     color: white;
     font-weight: 700;
-    font-size: 1.1em;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 nav {
@@ -50,18 +44,22 @@ nav .image-container img {
 
 nav p {
     margin: 0;
+}
+
+nav a {
+    text-decoration: none;
     color: inherit;
 }
 
 nav .nav-links-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
 }
 
 nav button {
     display: none;
     border: none;
-    padding: 0.6em 1.2em;
+    padding: 0.6em 1.3em;
     border-radius: 1.2rem;
     background-color: rgba(255, 0, 0, 0.8);
     color: white;
@@ -80,11 +78,13 @@ nav button:active {
 }
 
 nav .nav-links-container a {
-
-    padding: 1.2rem 1.2rem 1.6rem 1.2rem;
+    padding: 1.8rem 1rem;
     border-radius: 1.2rem 1.2rem 0 0;
     margin: 0.6rem 0.6rem 0 0.6rem;
-    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-wrap: nowrap;
 }
 
 nav .nav-links-container a:hover {
@@ -92,15 +92,23 @@ nav .nav-links-container a:hover {
     color: lightskyblue;
 }
 
-.hidden {
+/* .hidden {
     display: none !important;
-}
+} */
 
 /* desktop first development */
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 840px) {
     nav {
         display: flex;
         flex-direction: column;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .hidden {
+        display: none !important;
     }
 
     nav .main-container {
@@ -108,14 +116,10 @@ nav .nav-links-container a:hover {
     }
 
     nav .nav-links-container {
-        display: none;
-    }
-
-    nav button {
         display: block;
     }
 
-    nav .menu-list-container .nav-link {
+    /* nav .menu-list-container .nav-link {
         display: block;
         background-color: lightskyblue;
         padding: 1.2rem;
@@ -126,18 +130,14 @@ nav .nav-links-container a:hover {
     nav .menu-list-container .nav-link:hover {
         background-color: rgba(255, 0, 0, 0.8);
         color: white;
-    }
-
-    .hidden {
-        display: none;
-    }
+    } */
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 
     nav .main-container {
         font-size: 0.6em;
-        width: fit-content;
+        width: 100%;
     }
 
     nav .logo {
@@ -154,4 +154,4 @@ nav .nav-links-container a:hover {
         margin-left: 0.5rem;
     }
 
-}
+} */
