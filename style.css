@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Comfortaa', Helvetica, sans-serif;
     color: white;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 
 nav {
@@ -48,14 +48,13 @@ nav p {
 
 nav .nav-links-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 nav button {
     display: none;
     border: none;
     padding: 0.6rem 1rem;
-    margin-left: 0.4rem;
     border-radius: 1.2rem;
     background-color: rgba(255, 0, 0, 0.8);
     color: white;
@@ -74,15 +73,15 @@ nav button:active {
 }
 
 nav .nav-links-container a {
+    font-size: 1.2em;
     padding: 1.8rem 1rem;
     border-radius: 1.2rem 1.2rem 0 0;
     margin: 0.6rem 0.6rem 0 0.6rem;
     display: flex;
     align-items: center;
     text-decoration: none;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     color: inherit;
-    font-size: 1.2em;
 }
 
 nav .nav-links-container a:hover {
@@ -92,9 +91,12 @@ nav .nav-links-container a:hover {
 
 /* desktop first development */
 @media screen and (max-width: 840px) {
+    
+    
     nav {
         display: flex;
         flex-direction: column;
+        font-size: 0.8em;
     }
 
     nav button {
